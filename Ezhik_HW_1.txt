@@ -1,0 +1,79 @@
+HW_1. The first part
+
+1) Посмотреть где я - pwd
+
+2) Создать папку - mkdir lesson_1
+
+3) Зайти в папку - cd lesson_1
+
+4) Создать 3 папки - mkdir 1 2 3 4 5
+
+5) Зайти в любоую папку - cd 1
+
+6) Создать 5 файлов (3 txt, 2 json) - touch 1.txt 2.txt 3.txt 4.json 5.json
+
+7) Создать 3 папки - mkdir folder1 folder2 folder3
+
+8. Вывести список содержимого папки - ls -la
+
+9) + Открыть любой txt файл - cat 1.txt
+
+10) + написать туда что-нибудь, любой текст.cat >> 1.txt
+Hickory, dickory, dock,
+The mouse ran up the clock.
+The clock struck one,
+The mouse ran down!
+Hickory, dickory, dock.
+Hickory Dickory dock,
+The mouse ran up the clock,
+The clock struck two
+The mouse said, BOO,
+Hickory, dickory, dock.
+Hickory Dickory dock,
+The mouse ran up the clock,
+The clock struck three
+The mouse said WHEEEEE,
+Hickory, dickory, dock.
+
+11) + сохранить и выйти. - нажать ctrl+c
+
+12) Выйти из папки на уровень выше - cd ..
+
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. - mv 1/1.txt 1/2.txt 2
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp 2/1.txt 2/2.txt 1
+
+15) Найти файл по имени - find . -name "3.txt"
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. - tail -f 1/1.txt
+
+17) вывести несколько первых строк из текстового файла - head 1/1.txt
+
+18) вывести несколько последних строк из текстового файла - tail 1/1.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.  less 1/1.txt
+
+20) вывести дату и время - date
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request 
+
+curl http://162.55.220.72:5005/terminal-hw-request
+
+curl http://162.55.220.72:5005/get_method?name=set_your_String\&age=set_your_number
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 - формат файла:  script.sh 
+
+Текст скрипта: 
+cd lesson_1
+mkdir folder1 folder2 folder3 folder4 folder5
+cd folder1
+touch text1.txt text2.txt text3.txt json4.json json5.json
+mkdir fldr1 fldr2 fldr3
+ls -la
+mv text1.txt json4.json fldr1
